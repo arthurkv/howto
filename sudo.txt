@@ -1,0 +1,66 @@
+clear - очистка терминала
+sudo poweroff
+pm-suspend
+sudo --help
+sudo --version
+sudo apt-get update install git
+
+ls --help
+- короткий флаг ls -l or ls -la
+-- длинный флаг ls --context
+=аргумент ls --format=WORD
+
+cd (change directory):
+/ -корневая директория
+~ () -домашняя директория
+dirname -переход  в директорию ... внутри текущей директории
+.. -на уровень выше
+pwd -текущая директория
+ls (list)- содержимое директории:
+/dir/dirname -содержимое выбранной директории
+
+/bin -директория исполняемых файлов
+
+cp (copy)- копирование файлов cp name (/directory/)name2
+mv (move)- переименование файлов mv name (/directory/)name2
+rm (remove)- удаление файлов rm name name2 ...
+touch - создание файлов touch file.txt
+mkdir - создание папки mkdir dirname
+cat - выводит содержимое файлов  в терминал cat filename
+cat file |(means additional param) grep word | nano
+grep - pipeline прог-ма позволяющая найти по шаблону опр. строку
+tail -n 10 filename - выведет выведет последние 10 строк файла filename
+vim/nano - текстовый редактор
+:qw - quite write
+
+su root - залогиниться под пользователем root
+root - главнейший из главнейших в линуксе
+sudo passwd root - установка пароля для пользователя
+exit - выход из пользователя root
+
+sudo apt-get update
+sudo apt-get install vim
+wget url
+tar (vxjf - google it) archname
+cd /dirname
+vim README
+folow the direction (nornaly: ./configure > make > sudo make install)
+sudo make uninstall
+
+.bashrc - файл с настройками для bash (Unix shell)
+alias - команда, которая позволяет задать псевдонимы для других команд alias gi='git init'
+export - команда для определения переменных окружения
+PS1 - переменная кот. отвечает за то как будет выгледеть приветствие export PS1="\u:\w $ "
+
+source ~/.bashrc - подгрузка обновлений из файла
+
+echo $HOME - вывести значение переменной окружения HOME (/home/asus)
+export EDITOR=vim - установление редактора по умолчанию 
+EDITOR=vim crontab -e - установление ред по умолчанию только для комманды crontab -e
+
+cron - утилита, кот. позволяет выполнять что-либо по расписанию
+crontab - файл где хранятся скрипты cron
+
+chmod +x filename - файл станет исполняемым
+
+
