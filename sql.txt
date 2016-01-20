@@ -1,0 +1,16 @@
+* - ALL
+'some words' - 
+> < = <= >= оператор сравнения
+<> != - не равно
+
+
+SELECT *
+FROM tablename
+WHERE cell=something
+AND anothercell=somethingelse / OR anothercell=somethingelse
+ORDER BY columnname (DESC - от Я до А);
+
+
+
+
+
