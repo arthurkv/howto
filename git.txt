@@ -4,4 +4,13 @@ git commit -m "first commit"
 git remote add origin https://github.com/arthurkv/howto.git
 git push -u origin master
 
+git cline https://github.com/arthurkv/howto.git howto
+
+git checkout branchname - переключение между branch
+git branch - проврка branch
+git branch branchname - создание branch с именем branchname
+git merge branchname - сливание ветки в мастер
+
+
+
 
