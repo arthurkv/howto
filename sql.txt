@@ -3,14 +3,65 @@
 > < = <= >= оператор сравнения
 <> != - не равно
 
+NULL - значение для пустой ячейки
+int - числа
+varchar(50) - символы 50шт
 
 SELECT *
 FROM tablename
-WHERE cell=something
-AND anothercell=somethingelse / OR anothercell=somethingelse
+WHERE cell = something
+AND anothercell = somethingelse / OR anothercell = somethingelse
 ORDER BY columnname (DESC - от Я до А);
 
+SELECT COUNT(columnname)
+FROM tablename;
+count - количество всех строк
+sum - сумму строк
+avg - среднее значение
+max - максимальное значение
+min - минимальное значение
 
+SELECT columname, SUM(columnname1)
+FROM tablename
+WHEER columnname2=value (optional)
+GROUP BY columname
+HAVING COUNT(columnname)>value;
 
+INSERT INTO tablename (colum(s)name)
+VALUES (values для каждой колонки, кот. мы хотим заполнить);
+same
+INSERT INTO tablename 
+VALUES (values для каждой колонки, кот. мы хотим заполнить);
 
+UPDATE tablename
+SET columnname = 'value'
+WHERE anothercolumnname = anothervalue;
 
+DELETE FROM tablename WHERE columnname = value;
+
+CREATE DATABASE nameofdb;
+DROP DATABASE nameofdb;
+
+CREATE TABLE tablename
+(
+columnname datatype,
+columnname1 datatype,
+columnname2 datatype,
+...
+);
+DROP TABLE tablename;
+
+ALTER TABLE tablename
+ADD COLUMN columnname datatype(для значений нового столбца);
+
+ALTER TABLE tablename
+DROP COLUMN columnname;
+
+CREATE TABLE Actors (
+  name varchar(50),
+  country varchar(10)
+);
+
+INSERT INTO Actors (name, country) VALUES
+  ('Vivien Leigh',          'IN'),
+  ('Clark Gable',           'USA');
