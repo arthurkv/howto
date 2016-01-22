@@ -2,6 +2,8 @@ git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/arthurkv/howto.git
+
+git pull origin - ¿¿¿¿¿¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿¿ ¿¿ ¿¿¿¿¿¿¿¿ ¿¿¿¿¿¿¿¿¿¿¿
 git push -u origin master
 
 git cline https://github.com/arthurkv/howto.git howto
